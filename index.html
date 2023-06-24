@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="title">
+        Board of Intermediate <br />
+        and Secondary Education
+      </h1>
+    </header>
+    <form>
+      <div class="items">
+        <div class="item">
+          <h3 class="name">Board Name</h3>
+          <select required name="board" class="select">
+            <option value="">Select Your Board</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="Comilla">Comilla</option>
+            <option value="Barisal">Barisal</option>
+            <option value="Jessore">Jessore</option>
+            <option value="Mymensingh">Mymensingh</option>
+            <option value="Dinajpur">Dinajpur</option>
+            <option value="Madrasah">Madrasah</option>
+            <option value="Technical">Technical</option>
+          </select>
+        </div>
+        <div class="item">
+          <h3 class="name">Exam Year</h3>
+          <select required name="year" class="select">
+            <option value="">Select Year</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+          </select>
+        </div>
+        <div class="item">
+          <h3 class="name">Exam Name</h3>
+          <select required name="exam" class="select">
+            <option value="">Select Exam Name</option>
+            <option value="SSC/Dakhil">SSC/Dakhil</option>
+            <option value="HSC/ALim">HSC/ALim</option>
+            <option value="JSC/JDC">JSC/JDC</option>
+          </select>
+        </div>
+        <div class="item">
+          <h3 class="name">Group Name</h3>
+          <select required name="group" class="select">
+            <option value="">Select Group</option>
+            <option value="Science">Science</option>
+            <option value="Humanities">Humanities</option>
+            <option value="Business Studies">Business Studies</option>
+          </select>
+        </div>
+        <!-- Institute -->
+        <div class="info">
+          <label for="instituteName">Institute Name</label>
+          <input name="institute" id="instituteName" placeholder="Institute Name" type="text" required />
+        </div>
+        <!-- Type -->
+        <div class="item">
+          <h3 class="name">Type</h3>
+          <select name="type" class="select">
+            <option value="Regular">Regular</option>
+            <option value="Irregular">Irregular</option>
+          </select>
+        </div>
+        <div class="check">
+          <input id="checkbox" type="checkbox" />
+          <label for="checkbox">Fixed Above Information</label>
+        </div>
+        <br />
+        <!-- Student Name -->
+        <div class="item personal-info">
+          <div class="info">
+            <label for="student">Student Name</label>
+            <input required name="student" id="student" placeholder="Student Name" type="text" />
+          </div>
+        </div>
+        <!-- roll no -->
+        <div class="item personal-info">
+          <div class="info">
+            <label for="roll">Roll NO.</label>
+            <input required name="roll" id="roll" placeholder="Roll" type="text" />
+          </div>
+        </div>
+        <!-- Father Name -->
+        <div class="item personal-info">
+          <div class="info">
+            <label for="father">Father Name</label>
+            <input required name="father" id="father" placeholder="Father Name" type="text" />
+          </div>
+        </div>
+        <!-- Mother Name -->
+        <div class="item personal-info">
+          <div class="info">
+            <label for="mother">Mother Name</label>
+            <input required name="mother" id="mother" placeholder="Mother Name" type="text" />
+          </div>
+        </div>
+        <!-- Date of Birth -->
+        <div class="item personal-info">
+          <div class="info">
+            <label for="dob">Date of Birth</label>
+            <input required name="birth" id="dob" placeholder="DD/MM/YYYY" type="text" />
+          </div>
+        </div>
+      </div>
+      <!-- subject name -->
+      <div class="w-70 sub">
+        <div class="subject-title">
+          <h4>Subject Name</h4>
+          <h4>Marks</h4>
+        </div>
+        <div class="subject-marks w-70">
+          <div class="sub-wrapper">
+            <h5>Bangla</h5>
+            <input required name="bangla" class="mark-input" placeholder="Marks" type="number" min="0" max="100" />
+          </div>
+          <div class="sub-wrapper">
+            <h5>English</h5>
+            <input required name="english" class="mark-input" placeholder="Marks" type="number" min="0" max="100" />
+          </div>
+          <div class="sub-wrapper">
+            <h5>Mathematics</h5>
+            <input required name="mathematics" class="mark-input" placeholder="Marks" type="number" min="0" max="100" />
+          </div>
+          <div class="sub-wrapper">
+            <h5>Religion</h5>
+            <input required name="religion" class="mark-input" placeholder="Marks" type="number" min="0" max="100" />
+          </div>
+          <!-- divided group sub -->
+          <div id="group"></div>
+        </div>
+      </div>
+      <div class="btn-wrapper">
+        <button class="btn" id="submit" type="submit">Submit</button>
+        <a target="_blank" class="btn" href="./dashboard.html">Go to dashboard</a>
+      </div>
+    </form>
+  </div>
+  <script defer type="module" src="app.js"></script>
+</body>
+
+</html>
